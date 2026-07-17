@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Owelle Ezichi | Frontend Developer</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      background: linear-gradient(135deg, #0f0f0f, #1a1a2e, #16213e);
+      color: #eaeaea;
+      line-height: 1.6;
+    }
+    header {
+      background: rgba(0,0,0,0.8);
+      color: #fff;
+      padding: 60px 20px;
+      text-align: center;
+    }
+    header img {
+      width: 120px;
+      height: 120px;
+      object-fit: cover;
+      border-radius: 50%;
+      margin-bottom: 15px;
+      border: 3px solid #ff9800;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 2.2rem;
+    }
+    header p {
+      margin: 10px 0;
+      font-size: 1.1rem;
+      color: #ff9800;
+    }
+    .hero-buttons {
+      margin-top: 20px;
+    }
+    .hero-buttons a {
+      display: inline-block;
+      margin: 8px;
+      padding: 10px 20px;
+      background: #ff9800;
+      color: #111;
+      text-decoration: none;
+      border-radius: 5px;
+      font-weight: bold;
+      transition: background 0.3s;
+    }
+    .hero-buttons a:hover {
+      background: #ffa733;
+    }
+    nav {
+      background: #111;
+      padding: 10px;
+      text-align: center;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+    nav a {
+      color: #eaeaea;
+      margin: 0 12px;
+      text-decoration: none;
+      font-weight: bold;
+      transition: color 0.3s;
+    }
+    nav a:hover {
+      color: #ff9800;
+    }
+    section {
+      padding: 50px 30px;
+      max-width: 900px;
+      margin: auto;
+    }
+    h2 {
+      color: #ff9800;
+      border-bottom: 2px solid #444;
+      padding-bottom: 10px;
+      margin-bottom: 20px;
+    }
+    .skills, .projects {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+    }
+    .card {
+      background: #1f1f1f;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.5);
+      flex: 1 1 250px;
+      transition: transform 0.3s, background 0.3s;
+    }
+    .card:hover {
+      transform: translateY(-5px);
+      background: #2a2a2a;
+    }
+    .card button {
+      margin-top: 10px;
+      padding: 8px 15px;
+      background: #ff9800;
+      border: none;
+      border-radius: 5px;
+      font-weight: bold;
+      cursor: pointer;
+      transition: background 0.3s;
+    }
+    .card button:hover {
+      background: #ffa733;
+    }
+    .skills .card i {
+      font-size: 2rem;
+      margin-bottom: 10px;
+      color: #ff9800;
+    }
+    .social-links {
+      margin-top: 20px;
+    }
+    .social-links a {
+      color: #eaeaea;
+      margin: 0 10px;
+      font-size: 1.5rem;
+      transition: color 0.3s;
+    }
+    .social-links a:hover {
+      color: #ff9800;
+    }
+    footer {
+      background: #111;
+      color: #fff;
+      text-align: center;
+      padding: 20px;
+      margin-top: 40px;
+    }
+    @media (max-width: 768px) {
+      header h1 { font-size: 1.8rem; }
+      section { padding: 30px 20px; }
+    }
+    @media (max-width: 480px) {
+      .skills, .projects { flex-direction: column; }
+      header h1 { font-size: 1.5rem; }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <!-- Replace with your profile photo -->
+    <img src="IMG-20250117-WA0095.jpg" alt="Owelle Ezichi Profile Photo">
+    <h1>Owelle Ezichi</h1>
+    <p>Frontend Developer | Aspiring Full-Stack Engineer</p>
+    <div class="hero-buttons">
+      <a href="OwelleEzichiCV.pdf" download>Download CV</a>
+      <a href="#contact">Contact Me</a>
+    </div>
+    <div class="social-links">
+      <a href="https://github.com/owelleezichi-sudo" target="_blank"><i class="fab fa-github"></i></a>
+      <a href="https://linkedin.com/in/owelleezichi" target="_blank"><i class="fab fa-linkedin"></i></a>
+    </div>
+  </header>
+
+  <nav>
+    <a href="#about">About</a>
+    <a href="#skills">Skills</a>
+    <a href="#projects">Projects</a>
+    <a href="#education">Education</a>
+    <a href="#experience">Experience</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <section id="about">
+    <h2>About Me</h2>
+    <p>I am an aspiring IT web developer with a passion for technology and problem-solving. I enjoy learning new skills and building projects that improve my understanding of software development. I am committed to continuous learning and developing practical solutions through technology.</p>
+    <p><strong>Interests:</strong> Web development, front-end design, programming, cybersecurity, and emerging technologies.</p>
+    <p><strong>Career Goals:</strong> To become a skilled full-stack web developer, contributing to innovative projects and creating user-friendly digital solutions.</p>
+  </section>
+
+  <section id="skills">
+    <h2>Skills</h2>
+    <div class="skills">
+      <div class="card"><i class="fab fa-html5"></i>HTML5</div>
+      <div class="card"><i class="fab fa-css3-alt"></i>CSS3</div>
+      <div class="card"><i class="fab fa-js"></i>JavaScript</div>
+      <div class="card"><i class="fab fa-react"></i>React</div>
+      <div class="card"><i class="fab fa-git-alt"></i>Git</div>
+    </div>
+  </section>
+
+  <section id="projects">
+    <h2>Projects</h2>
+    <div class="projects">
+      <div class="card">
+        <h3>YouTube Clone</h3>
+        <p>Built with HTML, CSS, JavaScript, and React. Replicates core features of YouTube’s interface with responsive design.</p>
+        <button onclick="window.open('https://github.com/owelleezichi-sudo/youtube-clone','_blank')">View Project</button>
+      </div>
+      <div class="card">
+        <h3>Amazon Clone</h3>
+        <p>Developed with React and JavaScript. Simulates e-commerce functionality including product listings and cart system.</p>
+        <button onclick="window.open('https://github.com/owelleezichi-sudo/amazon-clone','_blank')">View Project</button>
+      </div>
+    </div>
+  </section>
+
+  <section id="education">
+    <h2>Education</h2>
+    <p><strong>Alvan Ikoku Federal University of Education</strong></p>
+    <p>Degree/Program: Information Technology (300 Level)</p>
+    <p>Expected Graduation: 2027</p>
+  </section>
+
+  <section id="experience">
+    <h2>Experience</h2>
+    <p><strong>Web Development Learner / Independent Developer</strong></p>
+    <ul>
+      <li>Built responsive websites using HTML, CSS, and JavaScript.</li>
+      <li>Gained hands-on IT support experience.</li>
+      <li>Applied problem-solving skills to troubleshoot and improve projects.</li>
+    </ul>
+  </section>
+
+  <section id="contact">
+    <h2>Contact</h2>
+    <p>Email: <a href="owelleezichi@gmail.com">owelleezichi@gmail.com</a></p>
+    <p
